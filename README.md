@@ -18,6 +18,12 @@ There is no separate upload step: the open document is the subject.
 > To run it, see [Run it yourself](#run-it-yourself-community-edition) below.
 > The default (cloud) build in this repo still targets the hosted backend (see [Backend requirement](#backend-requirement)).
 
+## Watch the walkthrough
+
+<a href="https://youtu.be/tTo0ph9Hd3g" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.youtube.com/vi/tTo0ph9Hd3g/maxresdefault.jpg" alt="Vaquill AI for Word walkthrough" width="640">
+</a>
+
 ## What works in each edition
 
 | Capability | Vaquill AI (hosted) | Community (your own key) |
