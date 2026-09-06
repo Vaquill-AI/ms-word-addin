@@ -18,6 +18,8 @@ There is no separate upload step: the open document is the subject.
 > To run it, see [Run it yourself](#run-it-yourself-community-edition) below.
 > The default (cloud) build in this repo still targets the hosted backend (see [Backend requirement](#backend-requirement)).
 
+[![Discord](https://img.shields.io/badge/Discord-Join%20the%20community-5865F2?logo=discord&logoColor=white)](https://discord.gg/GQtnwxf8nQ)
+
 ## Watch the walkthrough
 
 <a href="https://youtu.be/tTo0ph9Hd3g" target="_blank" rel="noopener noreferrer">
@@ -328,3 +330,7 @@ Issues and pull requests are welcome.
 
 Apache License 2.0.
 See [LICENSE](LICENSE) and [NOTICE](NOTICE).
+
+## Community
+
+Questions, ideas, or want to contribute? Join the Vaquill community on [Discord](https://discord.gg/GQtnwxf8nQ).
