@@ -14,6 +14,7 @@
     "build:community": "tsc -b && vite build --mode community",
     "preview": "vite preview",
     "type-check": "tsc --noEmit",
+    "test": "vitest run",
     "lint": "eslint .",
     "sideload": "office-addin-debugging start manifest.dev.xml desktop",
     "sideload:stop": "office-addin-debugging stop manifest.dev.xml",
@@ -34,6 +35,7 @@
     "office-addin-debugging": "^6.0.0",
     "office-addin-manifest": "^1.13.0",
     "typescript": "^5.5.4",
-    "vite": "^5.4.0"
+    "vite": "^5.4.0",
+    "vitest": "^3.2.7"
   }
 }
