@@ -137,7 +137,7 @@ Do not use a wildcard `*` origin: the add-in sends the Supabase bearer, so the a
 
 ## 4. Sideload and smoke-test in a real Word host
 
-The preview harness cannot exercise Office.js, so this is where the add-in is really validated.
+The [browser-only preview harness](README.md#browser-only-preview-harness) cannot exercise Office.js, so this is where the add-in is really validated.
 
 1. Validate the manifest: `npm run validate:manifest`.
 2. Sideload `manifest.xml` (now pointing at the live `word.vaquill.ai`):

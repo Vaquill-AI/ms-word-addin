@@ -271,6 +271,34 @@ npm run dev                           # serves the task pane on https://localhos
 npm run sideload                      # loads manifest.dev.xml into Word and opens it
 ```
 
+### Browser-only preview harness
+
+The repository includes a browser-only preview harness for inspecting the main UI without Word, Office.js, a backend, or an API key.
+
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000/preview.html` in a browser.
+If you have installed the optional Office development certificate, use `https://localhost:3000/preview.html` instead.
+
+The harness renders fixed mock data and cannot exercise Office.js, so real Word flows still require sideloading the add-in.
+The preview entry point is excluded from the production build.
+
+The available preview routes are fixed in `src/preview.tsx`:
+
+| Route | Shows |
+| --- | --- |
+| `/preview.html` | Review results with redlines, a summary, an outline, a sign-off gate, and document tools. |
+| `/preview.html#tools` | Clause tools for rewriting or explaining a selected clause. |
+| `/preview.html#authority` | Authority checks with verified, unmatched, and unresolved citations. |
+| `/preview.html#assistant` | An assistant conversation with sources and the document composer. |
+| `/preview.html#signoff` | A sign-off gate, approval reason, history, and sign-off action. |
+| `/preview.html#playbook` | Playbook positions and fallback ladders for contract terms. |
+| `/preview.html#draft` | A draft outline, agreement preview, and insert or copy actions. |
+| `/preview.html#changes` | Counterparty change triage with accept, reject, and review decisions. |
+
 Verify and build:
 
 ```bash
