@@ -1,4 +1,6 @@
+/// <reference types="vitest/config" />
 import { defineConfig } from "vite";
+import { configDefaults } from "vitest/config";
 import react from "@vitejs/plugin-react";
 import { existsSync, readFileSync } from "node:fs";
 import { homedir } from "node:os";
@@ -39,6 +41,11 @@ export default defineConfig({
   },
   resolve: {
     alias: { "@": resolve(__dirname, "src") },
+  },
+  test: {
+    environment: "node",
+    // This is a live provider probe, not a unit test. Never collect it.
+    exclude: [...configDefaults.exclude, "src/ai/test.ts"],
   },
   server: {
     port: 3000,
